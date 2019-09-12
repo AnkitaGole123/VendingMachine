@@ -1,7 +1,7 @@
 package vender;
 import java.util.List;
 
-public class Order {
+public class Order extends Output {
     private Product name;
     private List<Coins> coins;
     private double quantity;
