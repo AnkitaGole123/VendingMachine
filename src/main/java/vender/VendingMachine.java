@@ -1,10 +1,14 @@
 package vender;
 
-public class VendingMachine {
+import java.util.Arrays;
+import java.util.List;
+
+class VendingMachine {
     Order order;
     int capcity;
 
-    void insertCoin(Coins coins){
-
+    void insertCoin(Coins coin){
+        List<Coins> coins = Arrays.asList();
+        coins.add(coin);
     }
 }

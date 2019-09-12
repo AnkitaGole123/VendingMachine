@@ -1,12 +1,14 @@
 package vender;
+import java.util.List;
 
 public class Order {
     private Product name;
-    private Coins price;
-    double quantity;
-    public Order(Product name, Coins price, double quantity) {
+    private List<Coins> coins;
+    private double quantity;
+
+    public Order(Product name,List<Coins> coins, double quantity) {
         this.name = name;
-        this.price = price;
+        this.coins = coins;
         this.quantity = quantity;
     }
 
@@ -14,8 +16,8 @@ public class Order {
         return name;
     }
 
-    public Coins getPrice() {
-        return price;
+    public List<Coins> getCoins() {
+        return coins;
     }
 
     public double getQuantity() {
