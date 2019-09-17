@@ -12,15 +12,4 @@ public class Order extends Output {
         this.quantity = quantity;
     }
 
-    public Product getName() {
-        return name;
-    }
-
-    public List<Coin> getCoins() {
-        return coins;
-    }
-
-    public double getQuantity() {
-        return quantity;
-    }
 }
