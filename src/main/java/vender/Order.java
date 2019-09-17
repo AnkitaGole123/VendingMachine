@@ -4,12 +4,14 @@ import java.util.List;
 public class Order extends Output {
     private Product name;
     private List<Coin> coins;
-    private double quantity;
 
-    public Order(Product name, List<Coin> coins, double quantity) {
+
+    public Order(Product name, List<Coin> coins) {
         this.name = name;
         this.coins = coins;
-        this.quantity = quantity;
     }
-
+;
+    public List<Coin> getCoins() {
+        return coins;
+    }
 }

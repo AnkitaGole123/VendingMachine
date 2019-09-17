@@ -7,7 +7,8 @@ public class Client {
         VendingMachine vendingMachine = new VendingMachine();
         List<Coin> coins = new ArrayList<>();
         coins.add(Coin.QUARTER);
-        Order order = new Order(Product.COKE,coins,1);
+        Order order = new Order(Product.COKE,coins);
         System.out.println(vendingMachine.takeOrder(order));
+
     }
 }

@@ -9,7 +9,7 @@ public class Output {
         return product;
     }
 
-    public double getRemainingChange() {
-        return remainingChange;
+    public double getRemainingChange(double actualAmount, double amount) {
+        return amount - actualAmount;
     }
 }
