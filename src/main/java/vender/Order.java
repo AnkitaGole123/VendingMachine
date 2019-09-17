@@ -3,10 +3,10 @@ import java.util.List;
 
 public class Order extends Output {
     private Product name;
-    private List<Coins> coins;
+    private List<Coin> coins;
     private double quantity;
 
-    public Order(Product name,List<Coins> coins, double quantity) {
+    public Order(Product name, List<Coin> coins, double quantity) {
         this.name = name;
         this.coins = coins;
         this.quantity = quantity;
@@ -16,7 +16,7 @@ public class Order extends Output {
         return name;
     }
 
-    public List<Coins> getCoins() {
+    public List<Coin> getCoins() {
         return coins;
     }
 

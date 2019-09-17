@@ -1,14 +1,18 @@
 package vender;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 
 class VendingMachine {
-    int capcity;
     Inventory inventory;
-    Output takeOrder(Order order){
-        List<Output> outputs = Arrays.asList();
+    List<Output> takeOrder(Order order){
+        List<Output> outputs = new ArrayList<>();
         outputs.add(order);
-        return (Output) outputs;
+        return outputs;
+    }
+
+    double remainingPrice(){
+    Output output = new Output();
+        return output.getRemainingChange();
     }
 }
