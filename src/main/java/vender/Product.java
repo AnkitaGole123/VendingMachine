@@ -7,7 +7,7 @@ public enum Product {
     Product(double amount) {
     }
 
-    public double getCoins() {
+    public double getAmount() {
         return amount;
     }
 }
